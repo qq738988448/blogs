@@ -20,6 +20,22 @@
         <module>../blogs-web</module>
     </modules>
 
+    <!-- 设置默认远程仓库下载地址 -->
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>Maven of aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
         </dependencies>
