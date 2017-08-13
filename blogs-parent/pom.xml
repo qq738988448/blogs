@@ -17,7 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>../blogs</module>
+        <module>../blogs-web</module>
     </modules>
 
     <dependencyManagement>
