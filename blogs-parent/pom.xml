@@ -18,6 +18,7 @@
 
     <modules>
         <module>../blogs-web</module>
+		  <module>../blogs-common</module>
     </modules>
 
     <!-- 设置默认远程仓库下载地址 -->
