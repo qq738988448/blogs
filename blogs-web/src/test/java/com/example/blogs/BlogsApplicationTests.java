@@ -26,6 +26,7 @@ public class BlogsApplicationTests {
     private UsersMapper usersMapper;
 
     @Test
+    @Transactional(rollbackFor = Exception.class)
     public void contextLoads() {
         Users users = usersMapper.selectByPrimaryKey(1L);
         users.setPassword("123456");
