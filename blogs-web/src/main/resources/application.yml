@@ -16,6 +16,7 @@ spring:
                     transport:
                       tcp:
                         connect_timeout: 120s
+              #cluster-nodes: localhost:9300 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
 #Mybatis
 mybatis:
       type-aliases-package: com.example.blogs.model
