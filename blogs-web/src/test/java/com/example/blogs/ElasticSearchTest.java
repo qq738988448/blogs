@@ -9,7 +9,11 @@ import io.searchbox.client.JestResult;
 import io.searchbox.client.config.HttpClientConfig;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.lucene.analysis.Analyzer;
 import org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.index.Index;
+import org.elasticsearch.index.analysis.AbstractIndexAnalyzerProvider;
 import org.elasticsearch.index.query.QueryStringQueryBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,6 +39,7 @@ public class ElasticSearchTest {
     private static final Log logger = LogFactory.getLog(ElasticSearchTest.class);
     @Autowired
     private BlogRepository blogRepository;
+
 
     @Test
     public void test() {
@@ -72,6 +77,11 @@ public class ElasticSearchTest {
         } catch (IOException ex) {
             logger.info("", ex);
         }
+    }
+
+    @Test
+    public void segmenterTest() {
+
     }
 
 }

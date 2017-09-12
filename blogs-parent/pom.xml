@@ -21,6 +21,10 @@
         <module>../blogs-common</module>
     </modules>
 
+    <properties>
+        <lucene.version>6.6.1</lucene.version>
+    </properties>
+
     <!-- 设置默认远程仓库下载地址 -->
     <repositories>
         <repository>
